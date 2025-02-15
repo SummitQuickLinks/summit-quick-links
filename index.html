@@ -24,36 +24,38 @@
         }
 
  
-   .link-grid {
+ .link-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Flexible grid with minimum size for buttons */
-    gap: 20px; /* Equal spacing between buttons */
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 25px; /* Spacing between buttons */
+    justify-content: center; /* Center the grid horizontally */
+    align-content: center; /* Center the grid vertically */
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
-    margin: 0;
-    padding: 20px;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
 }
 
 .link-grid a {
     text-decoration: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px; /* Button width */
-    height: 120px; /* Button height */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    width: 150px; /* Larger button width */
+    height: 150px; /* Larger button height */
     background-color: rgba(76, 175, 80, 0.85); /* 85% transparent green */
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Slightly larger font size */
     font-weight: bold;
     border-radius: 20px; /* Rounded edges */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center; /* Ensure multi-line text is centered */
 }
 
 .link-grid a:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
