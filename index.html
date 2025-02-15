@@ -35,17 +35,17 @@
 
 
  
- .link-grid {
+.link-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
     gap: 25px; /* Spacing between buttons */
     justify-content: center; /* Center the grid horizontally */
     align-content: center; /* Center the grid vertically */
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding */
-    box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+    height: auto; /* Adjust height to fit content */
+    width: auto; /* Adjust width to fit content */
+    margin: 0 auto; /* Center the grid container */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .link-grid a {
