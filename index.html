@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-     body {
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Ensures the height fills the screen */
-    width: 100vw; /* Ensures the width fills the screen */
     background: url('IMG_0853.jpeg') no-repeat center center fixed;
-    background-size: cover; /* Ensures the image covers the screen */
-    overflow: hidden; /* Prevents scrolling if needed */
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjust alignment for scrolling */
+    min-height: 100vh; /* Ensure full viewport height */
+    width: 200vw; /* Extend width for horizontal scrolling */
+    overflow: auto; /* Enable scrolling */
 }
         .header {
             margin-bottom: 20px;
