@@ -17,6 +17,23 @@ background: url('SummitLogo2.pdf') no-repeat center center fixed;
     min-height: 100vh;
     overflow: auto;
 }.
+        .container {
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center; /* Center the text and buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center them horizontally */
+    justify-content: center; /* Center them vertically */
+    gap: 20px; /* Add space between title and buttons */
+    min-height: 100vh; /* Ensure the container fills the viewport */
+    background: url('SummitLogo2jpg') no-repeat center center; /* Replace 'your-image-file.jpg' with the image file name */
+    background-size: cover; /* Ensure the image covers the container */
+}
+
 .link-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
