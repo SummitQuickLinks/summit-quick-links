@@ -23,12 +23,12 @@
             color: #333;
         }
 
-    .link-grid {
+   .link-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 15px; /* Space between buttons */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Flexible grid with minimum size for buttons */
+    gap: 20px; /* Equal spacing between buttons */
     justify-content: center;
-    align-content: center;
+    align-items: center;
     height: 100vh; /* Full viewport height */
     width: 100vw; /* Full viewport width */
     margin: 0;
@@ -40,13 +40,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px; /* Larger width */
-    height: 120px; /* Larger height */
-    background-color: rgba(76, 175, 80, 0.85); /* 85% transparency */
+    width: 120px; /* Button width */
+    height: 120px; /* Button height */
+    background-color: rgba(76, 175, 80, 0.85); /* 85% transparent green */
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 20px; /* More rounded corners */
+    border-radius: 20px; /* Rounded edges */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
 }
