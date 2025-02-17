@@ -4,78 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-background: url('SummitLogo2.pdf') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    overflow: auto;
-}.
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('SummitLogo2.pdf') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
         .container {
-    border-radius: 15px;
-    padding: 20px;
-    width: 90%;
-    max-width: 800px;
-    text-align: center; /* Center the text and buttons */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center them horizontally */
-    justify-content: center; /* Center them vertically */
-    gap: 20px; /* Add space between title and buttons */
-    min-height: 100vh; /* Ensure the container fills the viewport */
-    background: url('SummitLogo2.pdf') no-repeat center center; /* Replace 'your-image-file.jpg' with the image file name */
-    background-size: cover; /* Ensure the image covers the container */
-}
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            min-height: 100vh;
+        }
 
-.link-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 30px; /* Add space between buttons */
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
 
-.link-grid a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column; /* Icon above text */
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(145deg, #4caf50, #3e8e41); /* Gradient for icon style */
-    color: white; /* Text color */
-    font-size: 1rem; /* Font size for text */
-    font-weight: bold;
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
-    padding: 10px; /* Spacing inside buttons */
-}
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
 
-.link-grid a:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns */
+            gap: 15px; /* Adjust spacing between buttons */
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-.link-grid a img {
-    width: 50px; /* Icon size */
-    height: 50px;
-    margin-bottom: 10px; /* Space between icon and text */
-}
+        .link-grid a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px; /* Smaller button width */
+            height: 120px; /* Smaller button height */
+            background-color: rgba(76, 175, 80, 0.85); /* Button background */
+            color: black;
+            font-size: 1rem; /* Smaller font size */
+            font-weight: bold;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
 
-
+        .link-grid a:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
 
         footer {
             margin-top: 20px;
@@ -86,18 +86,22 @@ background: url('SummitLogo2.pdf') no-repeat center center fixed;
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
+            <h1>Summit Stairs and Millwork</h1>
         </div>
-       <div class="link-grid">
-    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NaBWXUuSVkWOo7CzhXEz-18yGkJ5J4FPjUQ2Xml_8Z9UREpKSzQ1TDM2UlpFOEpXSzgxUlFNUjRQUi4u" target="_blank">Maintenance Ticket Request</a>
-    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NaBWXUuSVkWOo7CzhXEz-18yGkJ5J4FPjUQ2Xml_8Z9URVVHWThISDY0QkhEQTVBUzFVQTYwSThLUC4u" target="_blank">Truck Incident Report</a>
-    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NaBWXUuSVkWOo7CzhXEz-zmmQk5beWFIpovzykxVIxdUN1RWUDlOSlo5RUxCRVYwRUFMUFhBU0hBVC4u&origin=QRCode" target="_blank">HR Request/Inquiry</a>
-    <a href="https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN" target="_blank">ADP Log In</a>
-    <a href="#">Link 5</a>
-    <a href="#">Link 6</a>
-    <a href="#">Link 7</a>
-    <a href="#">Link 8</a>
-</div>
+
+        <!-- Buttons Section -->
+        <div class="link-grid">
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NaBWXUuSVkWOo7CzhXEz-18yGkJ5J4FPjUQ2Xml_8Z9UREpKSzQ1TDM2UlpFOEpXSzgxUlFNUjRQUi4u" target="_blank">Maintenance Ticket</a>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NaBWXUuSVkWOo7CzhXEz-18yGkJ5J4FPjUQ2Xml_8Z9URVVHWThISDY0QkhEQTVBUzFVQTYwSThLUC4u" target="_blank">Truck Incident</a>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=NaBWXUuSVkWOo7CzhXEz-zmmQk5beWFIpovzykxVIxdUN1RWUDlOSlo5RUxCRVYwRUFMUFhBU0hBVC4u&origin=QRCode" target="_blank">HR Inquiry</a>
+            <a href="https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN" target="_blank">ADP Log In</a>
+            <a href="#">Link 5</a>
+            <a href="#">Link 6</a>
+            <a href="#">Link 7</a>
+            <a href="#">Link 8</a>
+        </div>
 
         <footer>
             &copy; 2025 Summit Stairs and Millwork. All rights reserved.
