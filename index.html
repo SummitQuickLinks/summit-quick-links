@@ -18,29 +18,40 @@
             overflow: auto;
         }
 
-       .container {
-    width: 90%;
-    max-width: 800px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    min-height: 100vh;
-    padding-top: 20px; /* Add padding to move content down */
-}
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            min-height: 100vh;
+            padding-top: 40px; /* Added padding to move everything down */
+        }
 
-.link-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns */
-    gap: 15px; /* Adjust spacing between buttons */
-    justify-content: center;
-    align-content: center;
-    margin: 20px auto 0; /* Add margin at the top to move down */
-    padding: 20px;
-}
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
 
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns for buttons */
+            gap: 15px; /* Space between buttons */
+            justify-content: center;
+            align-content: center;
+            padding: 20px;
         }
 
         .link-grid a {
@@ -48,20 +59,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 120px; /* Smaller button width */
-            height: 120px; /* Smaller button height */
+            width: 120px; /* Button width */
+            height: 120px; /* Button height */
             background-color: rgba(76, 175, 80, 0.85); /* Button background */
             color: black;
-            font-size: 1rem; /* Smaller font size */
+            font-size: 1rem;
             font-weight: bold;
             border-radius: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s, box-shadow 0.2s;
-            text-align: center;
         }
 
         .link-grid a:hover {
-            transform: scale(1.05); /* Slight zoom effect */
+            transform: scale(1.05); /* Zoom effect on hover */
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
@@ -76,7 +86,7 @@
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <h1></h1>
+            <h1>Summit Stairs And Millwork</h1>
         </div>
 
         <!-- Buttons Section -->
